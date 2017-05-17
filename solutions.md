@@ -65,7 +65,7 @@ print(Z)
 #### j. Given a 1D array, negate all elements which are between 3 and 8, in place
 ```
 Z = np.arange(11)
-Z...
+Z[(3 < Z) & (Z <= 8)] *= -1
 print(Z)
 ```
 
@@ -84,17 +84,19 @@ equal = np.allclose(A,B)
 print(equal)
 ```
 
-#### m. How to convert a float (32 bits) array into an integer (32 bits) in place?
+#### m. How to convert an integer (32 bits) array into a float (32 bits) in place?
 ```
-Z = np.arange(10, dtype=np.float32)
+Z = np.arange(10, dtype=np.int32)
 print(Z.dtype)
-Z = Z.astype(np.int32, copy=False)
-print(Z.dtype)
+A = Z.view(np.float32)
+A[:] = Z[:]
+print(A.dtype)
+print(A.__array_interface__['data'][0] == Z.__array_interface__['data'][0])
+print(np.alltrue(A == np.arange(10,dtype=np.int32)))
 ```
 
 #### n. How to get the diagonal of a dot product?
 ```
-
 A = np.arange(9).reshape(3,3)
 B = A + 1
 

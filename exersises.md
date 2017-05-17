@@ -24,7 +24,7 @@ Speed optimization using Numpy, Cython, MPI and GPU acceleration
 #### j. Given a 1D array, negate all elements which are between 3 and 8, in place
 ```
 Z = np.arange(11)
-Z[(3 < Z) & (Z <= 8)] *= -1
+Z...
 print(Z)
 ```
 
@@ -43,9 +43,9 @@ equal = ...
 print(equal)
 ```
 
-#### m. How to convert a float (32 bits) array into an integer (32 bits) in place?
+#### m. How to convert an integer (32 bits) array into a float (32 bits) in place?
 ```
-Z = np.arange(10, dtype=np.float32)
+Z = np.arange(10, dtype=np.int32)
 print(Z.dtype)
 Z = ...
 print(Z.dtype)
