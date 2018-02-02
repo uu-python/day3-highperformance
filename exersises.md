@@ -62,5 +62,3 @@ print(D)
 
 ## 2. Speed optimization using Cython
 Cythonize the ```primes.py``` script (as described in the lecture notes)
-
-## 3. Start working on your coding project
