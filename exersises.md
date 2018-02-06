@@ -1,5 +1,5 @@
 # Exercises: High-performance computing
-Speed optimization using Numpy, Cython, MPI and GPU acceleration
+Speed optimization using Numpy, Cython
 
 ## 1. Numpy exercises
 
