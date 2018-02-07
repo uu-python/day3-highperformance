@@ -1,5 +1,4 @@
-# Exercises: High-performance computing
-Speed optimization using Numpy, Cython, MPI and GPU acceleration
+# Exercises: Numpy and inheritance
 
 ## 1. Numpy exercises
 
@@ -60,5 +59,24 @@ D = ...
 print(D)
 ```
 
-## 2. Speed optimization using Cython
-Cythonize the ```primes.py``` script (as described in the lecture notes)
+## 2. Speed optimization using Numpy
+Revisit the ```matmult.py``` example from yesterday and improve its performance using Numpy.
+
+## 3. Examples on classes and inheritance in Python
+
+### a. Create a "Person" class which takes firstname and lastname as arguments to the constructor (```___init___```) and define a method that returns the full name of the person as a combined string.
+
+### b. Create a "Student" class which inherits from the "Person" class, takes the subject area as an additional argument to the constructor and define a method that prints the full name and the subject area of the student.
+
+### c. You should be able now to use your "Student" class like this:
+```
+In [1]: from classroom import Student
+In [2]: me = Student('Benedikt', 'Daurer', 'physics') 
+In [3]: me.printNameSubject() 
+Benedikt Daurer, physics
+```
+
+### d. Create a "Teacher" class which also inherits from "Person", takes the name of the course (e.g. Python programming) as an argument and define a method that prints the full name of the teacher and the course he teaches. 
+
+
+<a name="myfootnote1">1</a>: Taken from [http://nealhughes.net/cython1/](http://nealhughes.net/cython1/)
