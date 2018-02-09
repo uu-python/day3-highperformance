@@ -1,4 +1,5 @@
-# Exercises: Numpy and inheritance
+# Exercises for Day 3
+Numpy and inheritance
 
 ## 1. Numpy exercises
 
