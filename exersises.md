@@ -88,7 +88,7 @@ mpirun python mpi_ranks.py
 ```
 
 #### b. Write a small script ```mpi_sum.py``` which calculates the sum over all ranks and prints the result from the process with rank 0.
-Hint: Have a look at the tutorials from the mpi4py documentation page: [https://mpi4py.scipy.org/docs/usrman/tutorial.html](https://mpi4py.scipy.org/docs/usrman/tutorial.html)
+Hint: Have a look at the tutorials from the mpi4py documentation page: [https://mpi4py.readthedocs.io/en/stable/tutorial.html](https://mpi4py.readthedocs.io/en/stable/tutorial.html)
 
 
 ## 5. GPU Computing
