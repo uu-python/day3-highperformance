@@ -60,7 +60,7 @@ equal = ...
 print(equal)
 ```
 
-#### m. How to convert an integer (32 bits) array into a float (32 bits) in place?
+#### m. How to calculate the square of every number in an array in place (without creating temporaries)?
 ```
 Z = np.arange(10, dtype=np.int32)
 print(Z.dtype)
